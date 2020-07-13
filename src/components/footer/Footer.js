@@ -9,7 +9,7 @@ const Footer = () => {
             </div>
             <div className="footer-contact">
                 <p>2019 ООО "Джетленд" </p>
-                <a>support@jetlend.ru</a> <span> 8 800 222 9332</span>
+                <a href="/">support@jetlend.ru</a> <span> 8 800 222 9332</span>
             </div>
         </footer>
     )

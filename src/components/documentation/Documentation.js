@@ -13,7 +13,7 @@ const Documentation = () => {
                         <p>Загрузите копию паспорта директора и учредителей компании: основной разворот и регистрация.</p>
                     </div>
                     <div className="card-line">
-                        <a className="green-link">Иванов Иван Иванович</a>
+                        <a className="green-link" href="/">Иванов Иван Иванович</a>
                         <div className="events">
                             <a href="/" className="with-icon file-icon">xnjfhtghajkffv.jpg</a>
                             <a href="/" className="with-icon file-icon">wothnfb...du.jpg</a>

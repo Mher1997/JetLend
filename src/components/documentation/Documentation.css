@@ -97,7 +97,7 @@
   padding-bottom: 20px;
 }
 .documentation .submit-content > button {
-  width: 180px;
+  width: 190px;
   height: 42px;
   font-size: 16px;
 }
@@ -163,7 +163,8 @@
     width: unset !important;
   }
   .documentation .submit-content button {
-    width: 160px;
+    font-size: 14px;
+    width: 170px;
     height: 35px;
   }
 }
@@ -186,7 +187,7 @@
     width: unset !important;
   }
   .documentation .submit-content button {
-    width: 120px;
+    width: 130px;
     height: 30px;
     font-size: 10px !important;
   }
