@@ -1,0 +1,185 @@
+.App{
+    overflow-x: hidden;
+    position: relative;
+    min-width: 350px;
+}
+
+.container{
+    display: flex;
+    margin-left: 300px;
+    min-height: 100vh;
+}
+
+.container>.content{
+    background: rgba(241, 241, 241, 0.5);
+    margin-top: 75px;
+    width: 100%;
+    padding: 30px 20px 95px 20px;
+}
+
+a, button{
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #368df6;
+}
+
+ul{
+    list-style: none;
+    margin-block-start: 0;
+    padding-inline-start: 0
+}
+  
+.with-icon{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.buttone-default-blue{
+    background: #276EC3;
+    border: 1px solid #276EC3;
+    border-radius: 5px;
+    color: white;
+    padding: 8px;
+}
+  
+.with-icon:before{
+    content: "";
+    width: 17px;
+    height: 17px;
+    min-width: 17px;
+    background-size: 17px;
+    display: block;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.green-link{
+    color: #4CAF50;
+    text-decoration: underline;
+}
+  
+.whatsapp-icon:before{
+    background-image: url(../../icons/whatsapp.svg);
+}
+  
+.message-icon:before{
+    background-image: url(../../icons/message.svg);
+}
+  
+.phone-icon:before{
+    background-image: url(../../icons/phone.svg);
+}
+
+.quest-icon:before{
+    background-image: url(../../icons/quest.svg);
+}
+
+.logout-icon:before{
+    background-image: url(../../icons/logout.svg);
+}
+
+.file-icon:before{
+    background-image: url(../../icons/file.svg);
+}
+
+.warning-icon:before{
+    background-image: url(../../icons/warning.svg);
+}
+
+.success-icon:before{
+    background-image: url(../../icons/success.svg);
+}
+
+.sm-show{
+    display: none;
+}
+
+@media only screen and (max-width: 1700px) {
+    h1{
+        font-size: 24px !important;
+    }
+    h2{
+        font-size: 18px !important;
+    }
+    p{
+        font-size: 14px !important;
+    }
+    span{
+        font-size: 14px !important;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .sm-show{
+        display: block;
+    }
+    .container{
+        margin: 0;
+    }
+    header{
+        width: 100%;
+    }
+    footer{
+        width: 100% !important;
+    }
+    .container>.content{
+        margin-top: 60px;
+        padding: 20px 10px 85px 10px;
+    }
+    .App{
+        overflow-x: unset !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    h1{
+        font-size: 20px !important;
+    }
+    h2{
+        font-size: 16px !important;
+    }
+    p{
+        font-size: 12px !important;
+    }
+    button{
+        font-size: 14px !important;
+    }
+    a{
+        font-size: 12px !important;
+    }
+    span{
+        font-size: 10px !important;
+    }
+}
+
+@media only screen and (max-width: 567px) {
+    h1{
+        font-size: 14px !important;
+    }
+    h2{
+        font-size: 12px !important;
+    }
+    p{
+        font-size: 8px !important;
+    }
+    button{
+        font-size: 12px !important;
+    }
+    a{
+        font-size: 10px !important;
+    }
+    span{
+        font-size: 8px !important;
+    }
+    .with-icon:before{
+        content: "";
+        width: 10px;
+        height: 10px;
+        min-width: 10px;
+        background-size: 10px;
+        margin-right: 6px;
+    }
+}

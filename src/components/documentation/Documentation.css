@@ -1,0 +1,193 @@
+.documentation {
+  background-color: white;
+  height: 100%;
+  border-radius: 5px;
+}
+.documentation > h1 {
+  margin: 0;
+  text-align: center;
+  color: #000C25;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 4vh 0;
+}
+.documentation .cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 90%;
+  margin: auto;
+}
+.documentation .cards .card {
+  width: 44%;
+  background: rgba(241, 241, 241, 0.5);
+  border-radius: 10px;
+  padding: 1% 30px;
+  min-height: 320px;
+  max-height: 450px;
+}
+.documentation .cards .card .card-title {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.documentation .cards .card .card-title p {
+  font-weight: bold;
+  font-size: 14px;
+}
+.documentation .cards .card .card-title span {
+  font-size: 10px;
+}
+.documentation .cards .card .card-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.documentation .cards .card .card-line > p {
+  font-size: 14px;
+  width: 40%;
+  padding-right: 20px;
+  margin: 0;
+}
+.documentation .cards .card .card-line .events {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  font-size: 12px;
+  width: 55%;
+  min-width: 220px;
+}
+.documentation .cards .card .card-line .events > a {
+  min-width: 95px;
+  width: 40%;
+  padding: 8px;
+}
+.documentation .cards .card .card-line .events > a.buttone-default-blue {
+  text-decoration: none;
+}
+.documentation .cards .card .card-line .events > a.buttone-default-blue::before {
+  background-image: url(../../icons/file-white.svg) !important;
+}
+.documentation .cards .card .card-line .events > a:hover {
+  background-color: #368df6;
+}
+.documentation .cards .card.custom-card .card-title {
+  padding-bottom: 30px;
+}
+.documentation .cards .card.custom-card .card-line > p {
+  width: 100%;
+}
+.documentation .cards .card.custom-card .card-line .events {
+  min-width: 100px;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.documentation .cards .card.custom-card .card-line .events::before {
+  min-width: 23px;
+  width: 23px;
+  height: 23px;
+  background-size: 22px;
+}
+.documentation .submit-content {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  padding-bottom: 20px;
+}
+.documentation .submit-content > button {
+  width: 180px;
+  height: 42px;
+  font-size: 16px;
+}
+@media only screen and (max-width: 1700px) {
+  .documentation .cards {
+    width: 95%;
+  }
+  .submit-content {
+    margin-top: 30px !important;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .documentation .cards .card {
+    max-height: unset;
+    width: 42%;
+  }
+  .documentation .cards .card .card-line .events {
+    min-width: unset;
+    justify-content: flex-end;
+  }
+  .documentation .cards .card .card-line .events > a {
+    width: 50%;
+    margin-bottom: 5px;
+  }
+  .submit-content {
+    height: 10vh;
+  }
+}
+@media only screen and (max-width: 1260px) {
+  .documentation .cards {
+    flex-direction: column;
+  }
+  .documentation .cards .card {
+    width: calc(100% - 60px);
+    margin-bottom: 15px;
+  }
+  .documentation .cards .card .card-line .events {
+    width: 50% !important;
+    min-width: 200px !important;
+    margin-left: 35px;
+  }
+  .documentation .cards .card .card-line .events > a {
+    min-width: 200px !important;
+  }
+  .documentation .cards .card .card-line > p {
+    width: unset !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .documentation .cards .card {
+    width: calc(100% - 60px);
+  }
+  .documentation .cards .card .card-line .events {
+    width: 30% !important;
+    min-width: 120px !important;
+    margin-left: 35px;
+  }
+  .documentation .cards .card .card-line .events > a {
+    min-width: 120px !important;
+    padding: 6px;
+  }
+  .documentation .cards .card .card-line > p {
+    width: unset !important;
+  }
+  .documentation .submit-content button {
+    width: 160px;
+    height: 35px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .documentation .cards .card {
+    width: calc(100% - 60px);
+  }
+  .documentation .cards .card .card-line .events {
+    width: 30% !important;
+    min-width: 90px !important;
+    margin-left: 35px;
+  }
+  .documentation .cards .card .card-line .events > a {
+    min-width: 90px !important;
+    padding: 4px;
+    font-size: 10px !important;
+    border-radius: 10px;
+  }
+  .documentation .cards .card .card-line > p {
+    width: unset !important;
+  }
+  .documentation .submit-content button {
+    width: 120px;
+    height: 30px;
+    font-size: 10px !important;
+  }
+}

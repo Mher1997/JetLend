@@ -1,0 +1,95 @@
+.left-side{
+    width: 300px;
+    height: 100vh;
+    min-width: 300px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(192, 192, 192, 0.3);
+    position: fixed;
+    left: 0;
+    z-index: 99999999;
+    .left-side-title{
+        text-align: center;
+        height: 75px;
+        border-bottom: 1px solid #F1F1F1;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        img{
+            padding: 0 30px;
+        }
+        h2{
+            margin: 0;
+            font-size: 20px;
+        }
+    }
+    .left-side-nav{
+        height: 50vh;
+        ul{
+            li{
+                height: 60px;
+                padding-left: 30px;
+                border-bottom: 1px solid #F1F1F1;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                font-size: 18px;
+                font-weight: bold;
+                &.disabled{
+                    color: #b6b6b6;
+                }
+                &.active{
+                    color: blue;
+                }
+                &:hover{
+                    background-color: #368df6;
+                }
+            }
+            
+        }
+    }
+    .left-side-footer{
+        position: absolute;
+        bottom: 0;
+        min-height: 275px;
+        height: 30vh;
+        padding: 20px 0;
+        border-top: 1px solid #F1F1F1;
+        .left-side-info{
+            margin-bottom: 5vh;
+            display: flex;
+            align-items: flex-start;
+            padding-left: 25px;
+            img{
+                padding-right: 10px;
+                margin-top: 15px;
+            }
+            h3{
+                color: #002B68;
+                font-weight: 600;
+                font-size: 16px;
+            }
+            p{
+                font-size: 15px;
+                &.message-icon::before{
+                    height: 13px;
+                }
+            }
+        }
+        .left-side-contact{
+            p{
+                padding-left: 30px;
+                &::before{
+                    height: 20px;
+                    width: 20px;
+                    background-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .left-side{
+        display: none;
+    }
+}
