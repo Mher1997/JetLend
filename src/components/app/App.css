@@ -6,13 +6,13 @@
 
 .container{
     display: flex;
-    margin-left: 300px;
+    margin-left: 290px;
     min-height: 100vh;
 }
 
 .container>.content{
     background: rgba(241, 241, 241, 0.5);
-    margin-top: 75px;
+    margin-top: 60px;
     width: 100%;
     padding: 30px 20px 95px 20px;
 }
